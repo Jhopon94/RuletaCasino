@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  backend:
+    image: backend:latest
+    ports:
+      - "9000:9000"
+
+  frontend:
+    image: frontend:latest
+    ports:
+      - "9001:9001"
+
+  gateway:
+    image: gateway:latest
+    ports:
+      - "80:80"
